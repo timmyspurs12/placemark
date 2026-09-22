@@ -14,3 +14,9 @@ venv/
 coverage/
 genlayer/
 .arena/
+.npm/
+.config/
+.next/
+frontend/node_modules/
+frontend/.next/
+*.log
