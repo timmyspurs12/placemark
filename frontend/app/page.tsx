@@ -23,12 +23,14 @@ export default function LandingPage() {
         }) as string;
         const agreements = parseAllAgreements(all);
         const compliant = agreements.filter((a: any) => a.decision === "COMPLIANT").length;
-        const locked = await (client as any).readContract({
-          address: CONTRACT_ADDRESS as any,
-          functionName: "get_total_locked",
-          args: [],
-        }) as string;
-        setStats({ total: parseInt(count) || agreements.length, compliant, locked });
+        // Calculate total locked from agreements (studio contract doesn't have get_total_locked)
+        let totalLocked = "0";
+        try {
+          totalLocked = agreements.reduce((sum: bigint, a: any) => {
+            try { return sum + BigInt(a.escrow_amount || "0"); } catch { return sum; }
+          }, BigInt(0)).toString();
+        } catch {}
+        setStats({ total: parseInt(count) || agreements.length, compliant, locked: totalLocked });
       } catch (e) {
         console.log("stats fetch error", e);
       }

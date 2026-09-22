@@ -101,30 +101,15 @@ export default function CampaignDetailPage() {
   };
 
   const handleFinalize = async () => {
-    if (!isConnected) { await connect(); return; }
-    try {
-      setTxState("SIGNING");
-      const { custom } = await import("viem");
-      const walletClient = (await import("genlayer-js")).createClient({
-        chain: { id: 61999, name: "GenLayer StudioNet", rpcUrls: { default: { http: [process.env.NEXT_PUBLIC_GENLAYER_RPC || "http://localhost:4000/api"] } }, nativeCurrency: { name: "GEN", symbol: "GEN", decimals: 18 } } as any,
-        transport: custom((window as any).ethereum) as any,
-        account: address as any,
-      } as any) as any;
-      setTxState("SUBMITTED");
-      const hash = await (walletClient as any).writeContract({
-        address: CONTRACT_ADDRESS,
-        functionName: "finalize_and_release",
-        args: [id],
-      });
-      setTxHash(hash);
-      setTxState("PENDING");
-      await (walletClient as any).waitForTransactionReceipt?.({ hash, status: "FINALIZED" }) || await new Promise(r => setTimeout(r, 3000));
-      setTxState("FINALIZED");
-      fetchAgreement();
-    } catch (e: any) {
-      setTxState("FAILED");
-      alert(e.message);
-    }
+    // Studio contract (0xa79C6712154661086d7864FdA1BC09C705AF47E8) is verification-only: 6 methods
+    // Full escrow release is in contracts/placemark.py (finalize_and_release)
+    alert(
+      "Studio contract is verification-only (6 methods).\n\n" +
+      "Live deployed: 0xa79C6712154661086d7864FdA1BC09C705AF47E8\n" +
+      "Methods: create_agreement, submit_placement, evaluate_placement, get_agreement, get_all_agreements, get_agreement_count\n\n" +
+      "Full escrow release (finalize_and_release / withdraw / get_total_locked) is in contracts/placemark.py for production.\n" +
+      "For demo, COMPLIANT already sets release_authorized=true on-chain."
+    );
   };
 
   if (loading) return <div className="max-w-[1280px] mx-auto px-6 py-8 font-mono text-[12px]">Loading agreement #{id} from GenLayer...</div>;
