@@ -1,0 +1,14 @@
+{
+  "name": "placemark-genlayer",
+  "version": "1.0.0",
+  "description": "Placemark — Verifiable Ad Placement with GenLayer Intelligent Contracts",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "test": "pytest tests/direct -v",
+    "lint:contract": "genvm-lint check contracts/placemark.py || echo 'genvm-lint not installed, skipping'"
+  },
+  "keywords": ["genlayer", "intelligent-contracts", "ad-verification", "visual-evidence"],
+  "author": "Placemark Team",
+  "license": "MIT"
+}

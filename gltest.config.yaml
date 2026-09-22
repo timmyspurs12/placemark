@@ -1,0 +1,7 @@
+networks:
+  - name: studionet
+    rpc_url: http://localhost:4000/api
+    chain_id: 61999
+  - name: localnet
+    rpc_url: http://localhost:4000/api
+    chain_id: 61999

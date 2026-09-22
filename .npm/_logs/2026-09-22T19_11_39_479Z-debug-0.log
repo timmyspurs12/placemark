@@ -1,0 +1,134 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.20.2
+3 silly config load:file:/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/user/frontend/.npmrc
+5 silly config load:file:/home/user/.npmrc
+6 silly config load:file:/usr/etc/npmrc
+7 verbose title npm install @privy-io/react-auth
+8 verbose argv "install" "@privy-io/react-auth" "--loglevel" "silent"
+9 verbose logfile logs-max:10 dir:/home/user/.npm/_logs/2026-09-22T19_11_39_479Z-
+10 verbose logfile /home/user/.npm/_logs/2026-09-22T19_11_39_479Z-debug-0.log
+11 silly packumentCache heap:998768640 maxSize:249692160 maxEntrySize:124846080
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest @privy-io/react-auth@*
+15 silly packumentCache full:https://registry.npmjs.org/@privy-io%2freact-auth cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/@privy-io%2freact-auth 357ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/@privy-io%2freact-auth set size:undefined disposed:false
+18 silly fetch manifest @abstract-foundation/agw-client@^1.0.0
+19 silly packumentCache full:https://registry.npmjs.org/@abstract-foundation%2fagw-client cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/@abstract-foundation%2fagw-client 105ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/@abstract-foundation%2fagw-client set size:undefined disposed:false
+22 silly fetch manifest typescript@^5
+23 silly packumentCache full:https://registry.npmjs.org/typescript cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/typescript 279ms (cache miss)
+25 silly packumentCache full:https://registry.npmjs.org/typescript set size:undefined disposed:false
+26 silly fetch manifest viem@^2.21.0
+27 silly packumentCache full:https://registry.npmjs.org/viem cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/viem 189ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/viem set size:undefined disposed:false
+30 silly fetch manifest @farcaster/mini-app-solana@^1.0.0
+31 silly packumentCache full:https://registry.npmjs.org/@farcaster%2fmini-app-solana cache-miss
+32 http fetch GET 200 https://registry.npmjs.org/@farcaster%2fmini-app-solana 50ms (cache miss)
+33 silly packumentCache full:https://registry.npmjs.org/@farcaster%2fmini-app-solana set size:undefined disposed:false
+34 silly fetch manifest @farcaster/miniapp-sdk@>=0.2.3
+35 silly packumentCache full:https://registry.npmjs.org/@farcaster%2fminiapp-sdk cache-miss
+36 http fetch GET 200 https://registry.npmjs.org/@farcaster%2fminiapp-sdk 41ms (cache miss)
+37 silly packumentCache full:https://registry.npmjs.org/@farcaster%2fminiapp-sdk set size:undefined disposed:false
+38 silly fetch manifest @solana/wallet-adapter-base@>=0.9.0
+39 silly packumentCache full:https://registry.npmjs.org/@solana%2fwallet-adapter-base cache-miss
+40 http fetch GET 200 https://registry.npmjs.org/@solana%2fwallet-adapter-base 43ms (cache miss)
+41 silly packumentCache full:https://registry.npmjs.org/@solana%2fwallet-adapter-base set size:undefined disposed:false
+42 silly fetch manifest @solana/web3.js@^1.99.0
+43 silly packumentCache full:https://registry.npmjs.org/@solana%2fweb3.js cache-miss
+44 http fetch GET 200 https://registry.npmjs.org/@solana%2fweb3.js 220ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/@solana%2fweb3.js set size:undefined disposed:false
+46 silly fetch manifest @solana/wallet-adapter-react@>=0.15.0
+47 silly packumentCache full:https://registry.npmjs.org/@solana%2fwallet-adapter-react cache-miss
+48 http fetch GET 200 https://registry.npmjs.org/@solana%2fwallet-adapter-react 65ms (cache miss)
+49 silly packumentCache full:https://registry.npmjs.org/@solana%2fwallet-adapter-react set size:undefined disposed:false
+50 silly fetch manifest react@18.3.1
+51 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+52 http fetch GET 200 https://registry.npmjs.org/react 178ms (cache miss)
+53 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+54 silly fetch manifest @solana-program/memo@>=0.8.0
+55 silly packumentCache full:https://registry.npmjs.org/@solana-program%2fmemo cache-miss
+56 http fetch GET 200 https://registry.npmjs.org/@solana-program%2fmemo 40ms (cache miss)
+57 silly packumentCache full:https://registry.npmjs.org/@solana-program%2fmemo set size:undefined disposed:false
+58 silly fetch manifest @solana/kit@^8.3.0
+59 silly packumentCache full:https://registry.npmjs.org/@solana%2fkit cache-miss
+60 http fetch GET 200 https://registry.npmjs.org/@solana%2fkit 137ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/@solana%2fkit set size:undefined disposed:false
+62 silly fetch manifest @solana-program/system@>=0.8.0
+63 silly packumentCache full:https://registry.npmjs.org/@solana-program%2fsystem cache-miss
+64 http fetch GET 200 https://registry.npmjs.org/@solana-program%2fsystem 43ms (cache miss)
+65 silly packumentCache full:https://registry.npmjs.org/@solana-program%2fsystem set size:undefined disposed:false
+66 silly fetch manifest @solana-program/token@>=0.6.0
+67 silly packumentCache full:https://registry.npmjs.org/@solana-program%2ftoken cache-miss
+68 http fetch GET 200 https://registry.npmjs.org/@solana-program%2ftoken 46ms (cache miss)
+69 silly packumentCache full:https://registry.npmjs.org/@solana-program%2ftoken set size:undefined disposed:false
+70 silly fetch manifest permissionless@^0.2.47
+71 silly packumentCache full:https://registry.npmjs.org/permissionless cache-miss
+72 http fetch GET 200 https://registry.npmjs.org/permissionless 83ms (cache miss)
+73 silly packumentCache full:https://registry.npmjs.org/permissionless set size:undefined disposed:false
+74 silly fetch manifest ox@^0.8.0
+75 silly packumentCache full:https://registry.npmjs.org/ox cache-miss
+76 http fetch GET 200 https://registry.npmjs.org/ox 152ms (cache miss)
+77 silly packumentCache full:https://registry.npmjs.org/ox set size:undefined disposed:false
+78 silly fetch manifest react-dom@18.3.1
+79 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+80 http fetch GET 200 https://registry.npmjs.org/react-dom 199ms (cache miss)
+81 silly packumentCache full:https://registry.npmjs.org/react-dom set size:undefined disposed:false
+82 verbose stack Error: could not resolve
+82 verbose stack     at PlaceDep.failPeerConflict (/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/place-dep.js:503:25)
+82 verbose stack     at new PlaceDep (/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/place-dep.js:157:21)
+82 verbose stack     at #buildDepStep (/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:917:18)
+82 verbose stack     at async Arborist.buildIdealTree (/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:181:7)
+82 verbose stack     at async Promise.all (index 1)
+82 verbose stack     at async Arborist.reify (/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:131:5)
+82 verbose stack     at async Install.exec (/usr/lib/node_modules/npm/lib/commands/install.js:150:5)
+82 verbose stack     at async Npm.exec (/usr/lib/node_modules/npm/lib/npm.js:207:9)
+82 verbose stack     at async module.exports (/usr/lib/node_modules/npm/lib/cli/entry.js:74:5)
+83 error code ERESOLVE
+84 error ERESOLVE could not resolve
+85 error
+86 error While resolving: placemark@0.1.0
+86 error Found: ox@0.14.45
+86 error node_modules/ox
+86 error   ox@"0.14.45" from viem@2.56.8
+86 error   node_modules/viem
+86 error     viem@"^2.21.7" from genlayer-js@0.1.2
+86 error     node_modules/genlayer-js
+86 error       genlayer-js@"^0.1.0" from the root project
+86 error     viem@"^2.21.0" from the root project
+86 error
+86 error Could not resolve dependency:
+86 error @privy-io/react-auth@"*" from the root project
+86 error
+86 error Conflicting peer dependency: ox@0.8.9
+86 error node_modules/ox
+86 error   peerOptional ox@"^0.8.0" from permissionless@0.2.57
+86 error   node_modules/permissionless
+86 error     peerOptional permissionless@"^0.2.47" from @privy-io/react-auth@3.45.0
+86 error     node_modules/@privy-io/react-auth
+86 error       @privy-io/react-auth@"*" from the root project
+86 error
+86 error Fix the upstream dependency conflict, or retry
+86 error this command with --force or --legacy-peer-deps
+86 error to accept an incorrect (and potentially broken) dependency resolution.
+87 error
+87 error
+87 error For a full report see:
+87 error /home/user/.npm/_logs/2026-09-22T19_11_39_479Z-eresolve-report.txt
+88 silly unfinished npm timer reify 1790104300154
+89 silly unfinished npm timer reify:loadTrees 1790104300156
+90 silly unfinished npm timer idealTree:buildDeps 1790104300558
+91 silly unfinished npm timer idealTree:#root 1790104300559
+92 verbose cwd /home/user/frontend
+93 verbose os Linux 6.1.158+
+94 verbose node v20.20.2
+95 verbose npm  v10.8.2
+96 verbose exit 1
+97 verbose code 1
+98 error A complete log of this run can be found in: /home/user/.npm/_logs/2026-09-22T19_11_39_479Z-debug-0.log

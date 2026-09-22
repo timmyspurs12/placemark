@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #fdfcf8;
+  --ink: #1a1a1a;
+  --line: #e8e3db;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.serif {
+  font-family: "Playfair Display", serif;
+}
+
+/* Evidence Lens */
+.evidence-polaroid {
+  background: white;
+  border: 1px solid #e8e3db;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+  transform: rotate(-0.5deg);
+}
+
+.evidence-stamp {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2.5px solid;
+  padding: 4px 10px;
+  display: inline-block;
+  transform: rotate(-3deg);
+}
+
+.stamp-compliant {
+  color: #166534;
+  border-color: #166534;
+  background: #f0fdf4;
+}
+
+.stamp-non {
+  color: #991b1b;
+  border-color: #991b1b;
+  background: #fef2f2;
+}
+
+.stamp-inconclusive {
+  color: #92400e;
+  border-color: #d97706;
+  background: #fffbeb;
+}
+
+.criteria-check {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+}
+
+/* Subtle grid */
+.grid-paper {
+  background-image: 
+    linear-gradient(#e8e3db 1px, transparent 1px),
+    linear-gradient(90deg, #e8e3db 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.15;
+}
